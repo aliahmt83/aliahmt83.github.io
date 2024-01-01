@@ -1,8 +1,20 @@
 html {
     font-size: 100%}
 body {
-    background: #fff;
-    font-family: 'Roboto', sans-serif;
+
+    background: #f8f9fa;
+    font-family: 'B Roya Bold';
+    font-size: 16px;
+    font-weight: 300;
+    color: #313131;
+    line-height: 28px;
+    text-align: center;
+    overflow-x: hidden!important;
+    margin: auto!important;
+}
+body {
+    background: #f8f9fa;
+    font-family: 'B Roya Bold';
     font-size: 16px;
     font-weight: 300;
     color: #313131;
@@ -34,8 +46,8 @@ li {
 }
 /* Selection */
 ::selection {
-	color: #fff;
-	background-color: #2258BF;
+	color: #edede9;
+	background-color: #252422;
 }
 .preloader {
     position: fixed;
@@ -43,7 +55,7 @@ li {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: #fefefe;
+    background-color: #edede9;
     z-index: 99999;
     height: 100%;
     width: 100%;
@@ -63,39 +75,44 @@ li {
     margin: -20px 0 0 -20px;
 }
 @font-face {
-    font-family: 'Lane';
-    src: url(../fonts/lanenar_Lane.eot);
-    src: url(../fonts/lanenar_Lane.eot?#iefix) format("embedded-opentype"), url(../fonts/lanenar_Lane.woff) format("woff"), url(../fonts/lanenar_Lane.ttf) format("truetype"), url(../fonts/lanenar_Lane.svg#Lane) format("svg");
+    font-family: 'B Roya Bold';
+    src: url(../fonts/BRoyaBold.ttf);
+    src: url(../fonts/BRoyaBold.woff) format("woff"), url(../fonts/BRoyaBold.ttf) format("truetype");
     font-weight: 400;
     font-style: normal;
 }
 @font-face {
     font-family: 'Lane';
-    src: url(../fonts/lanenar_Lane.svg#Lane) format("svg");
+    src: url(../fonts/BRoyaBold.woff) format("woff"), url(../fonts/BRoyaBold.ttf) format("truetype");
 }
 h1, h2 {
-    font-family: 'roboto', sans-serif;
+    font-family: 'B Roya Bold';
     font-weight: 200;
 }
 h1 {
+    direction: rtl;
     font-size: 3.75rem;
     line-height: 4.688rem;
 }
 h2 {
+    direction: rtl;
     font-size: 3.125rem;
     line-height: 4.063rem;
 }
 h3 {
+    direction: rtl;
     font-size: 24px;
     line-height: 38px;
     font-weight: 300;
 }
 h4 {
+    direction: rtl;
     font-size: 20px;
     line-height: 30px;
     font-weight: 300;
 }
 h5 {
+    direction: rtl;
     font-size: 18px;
     font-weight: 300;
 }
@@ -184,7 +201,7 @@ header .full-screen {
 }
 .sticky-navigation {
     min-height: 60px;
-    background: #FFF;
+    background: #edede9;
     border: none;
     padding: 0!important;
     margin-bottom: 0!important;
@@ -313,6 +330,10 @@ header .intro-section .buttons {
 .app-brief .left-align {
     text-align: left;
     margin-bottom: 50px;
+}
+    .app-brief .right-align {
+        text-align: right;
+        margin-bottom: 50px;
 }
 .app-brief .left-align p {
     display: block;
@@ -888,8 +909,8 @@ code  {
 }
 
 #nevbarleft {
-    background: #ffffff none repeat scroll 0 0;
-    color: #ffffff;
+    background: #f8f9fa none repeat scroll 0 0;
+    color: #f8f9fa;
     max-width: 250px;
     min-width: 250px;
     position: relative;
@@ -903,7 +924,7 @@ code  {
 
 #nevbarleft .sidebar-header {
     padding: 20px;
-    background: #2258BF;
+    background: #252422;
 }
 .sidebar-header h2 {
     margin: 0;
@@ -916,9 +937,10 @@ code  {
     margin-right: 10px;
 }
 #nevbarleft ul.components {
+    direction: rtl;
     padding: 20px 0;
     border-bottom:1px solid rgba(255,255,255,0.1);
-	text-align: left;
+	text-align: right;
 	
 }
 .side-nav{
@@ -946,7 +968,7 @@ code  {
 #nevbarleft ul li a:focus,
 #nevbarleft ul li a:hover,
 #nevbarleft ul li.active a{
-    background: #2258BF none repeat scroll 0 0;
+    background: #252422 none repeat scroll 0 0;
     color: #ffffff;
 }
 
@@ -1014,7 +1036,7 @@ a.article, a.article:hover {
 #sidebarCollapse {
     width: 40px;
     height: 40px;
-    background: #2258BF;
+    background: #252422;
 	border: 1px solid #ffffff;
 	border-radius: 3px;
 }
@@ -1049,7 +1071,7 @@ a.article, a.article:hover {
 }
 .top-nav-bar{
 	margin-bottom:0;
-	background-color: #2258BF;
+	background-color: #252422;
 	position:sticky;
 	top:0;
 	z-index:999;
@@ -1253,14 +1275,7 @@ img {
     height: 80%;
     position: relative;
 }
-.site-button.support-button {
-    border: 1px solid #fff;
-    background-color: #2258BF;
-    float: right;
-    margin: 7px 5px;
-	transition: all 0.5s;
-	border-radius: 3px;
-}
+
 .site-button.support-button:hover{
 	background-color: #fff;
 	transition: all 0.5s;
@@ -1301,45 +1316,7 @@ img {
 	opacity: 1;
 }
 /* Video */
-.videoplay-bx i{
-	width: 50px;
-	height: 50px;
-	background: #2258BF;
-	border-radius: 40px;
-	text-align: center;
-	line-height: 50px;
-	color: #fff;
-}
-.videoplay-bx span{
-	font-weight: 700;
-    text-transform: uppercase;
-    color: #fff;
-    margin-left: 10px;
-	
-}
-.videoplay-bx{
-	display: block;
-	position: absolute;
-	top: 50%;
-	transform: translate(-50% , -50%);
-	margin-top: 0;
-	left: 50%;
-}
-.video-box {
-    max-width: 600px;
-	margin-left: auto;
-	margin-top: 50px;
-	margin-right: auto;
-	position: relative;
-	overflow: hidden;
-	border-radius: 15px;
-	margin-bottom: -200px;
-	border: 5px solid #fff;
-	box-shadow: 0 20px 50px 20px rgba(0,0,0,0.2);
-}
-.video-meida{
-	background-color:#000;
-}
+
 .video-meida img{
 	opacity:0.5;
 }
@@ -1384,10 +1361,10 @@ img {
 .lg-actions .lg-prev, 
 .lg-sub-html, 
 .lg-toolbar{
-    background-color: #2258BF;
+    background-color: #252422;
 }
 .lg-outer .lg-toogle-thumb{
-	color: #2258BF;
+	color: #252422;
 }
 .lg-outer .lg-toogle-thumb,
 .lg-outer .lg-thumb-outer,
@@ -1452,7 +1429,7 @@ img {
 
 /* Custom */
 .text-primary{
-	color: #2258BF!important;
+	color: #fb8500!important;
 }
 .text-black{
 	color: #000;
@@ -1479,14 +1456,14 @@ img {
     font-weight: 400;
 }
 .custom-info .gmail {
-    color: #2258BF;
+    color: #fb8500;
     font-size: 15px;
     font-weight: 600;
 	margin: 5px;
     text-transform: capitalize;
 }
 .custom-info .gmail i {
-    background-color: #2258BF;
+    background-color: #fb8500;
     border-radius: 7px;
     color: #ffffff;
     font-size: 18px;
@@ -1630,7 +1607,7 @@ img {
 	color:#fff;
 }
 .nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus{
-	background-color:#2258BF;
+	background-color:#252422;
 }
 .border{
 	border:1px solid #ccc;
@@ -1640,13 +1617,13 @@ img {
 }
 
 .color-1{
-	background:#2258BF;
+	background:#252422;
 }
 .color-2{
 	background:#6610f2;
 }
 .color-3{
-	background:#2258BF;
+	background:#252422;
 }
 .color-4{
 	background:#4d06a5;
